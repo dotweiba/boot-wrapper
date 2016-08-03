@@ -8,7 +8,9 @@ rtsm_ve-aemv8a.dts       - point to <linux-src-dir>/arch/arm64/boot/dts/rtsm_ve-
 rtsm_ve-motherboard.dtsi - point to <linux-src-dir>/arch/arm64/boot/dts/rtsm_ve-motherboard.dtsi
 skeleton.dtsi		 - point to <linux-src-dir>/arch/arm64/boot/dts/skeleton.dtsi
 
-Alternatively, you may specify the paths for dtc and the main dts file
-on the make command-line. For example:
+Alternatively, you may specify the paths for dtc and the main dts file.
 
-make DTC=<path-to-dtc> FDT_SRC=<linux-src-dir>/arch/arm64/boot/dts/vexpress-v2p-aarch64.dtsi
+DTC=<path-to-dtc> FDT_SRC=<linux-src-dir>/arch/arm64/boot/dts/vexpress-v2p-aarch64.dtsi
+
+HOWTO:
+When all prequisites abovementioned are ready, just type make link_img or make link_nfs,then corresponding axf files would be generated.
