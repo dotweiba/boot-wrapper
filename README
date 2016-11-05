@@ -13,4 +13,4 @@ Alternatively, you may specify the paths for dtc and the main dts file.
 DTC=<path-to-dtc> FDT_SRC=<linux-src-dir>/arch/arm64/boot/dts/vexpress-v2p-aarch64.dtsi
 
 HOWTO:
-When all prequisites abovementioned are ready, just type make link_img or make link_nfs,then corresponding axf files would be generated.
+When all prequisites abovementioned are ready, just type make link_img or make link_nfs, then corresponding axf files would be generated. They have different boot args (boot with img or nfs).
